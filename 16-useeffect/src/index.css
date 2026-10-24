@@ -1,0 +1,37 @@
+/* Basic Boilerplate */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-color: rgba(29, 16, 58, 0.938);
+  color: rgb(209, 160, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 1rem 2rem;
+  margin: 2rem 1rem;
+  transition: ease-in-out cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-color: rgb(222, 146, 255);
+  border: none;
+  border-radius: 1rem;
+}
+
+h1 {
+  padding: 0 3rem;
+  font-size: 5rem;
+  font-weight: 700;
+}

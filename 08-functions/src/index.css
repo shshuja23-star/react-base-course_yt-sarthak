@@ -1,0 +1,35 @@
+/* Basic Boilerplate */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: rgba(29, 16, 58, 0.938);
+  color: rgb(209, 160, 255);
+}
+
+/* .page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+}
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #222;
+}
+.page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+} */
