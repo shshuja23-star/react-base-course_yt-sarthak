@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: rgb(10, 10, 10);
+  --color-nav-bg: rgba(31, 31, 31, 0.8);
+  --color-nav-border: rgba(54, 54, 54, 0.863);
+  --color-footer-bg: rgba(31, 31, 31, 0.8);
+  --color-footer-border: rgba(54, 54, 54, 0.863);
+  --color-muted: #a5a5a5;
+  --color-accent: rgb(227, 215, 255);
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes swing-hair {
+  0% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(-6deg);
+  }
+}
+
+@keyframes float {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes zero-flip {
+  0% {
+    transform: translateX(0) scale(1) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(5px) scale(1.4) rotateY(90deg);
+  }
+  100% {
+    transform: translateX(10px) scale(1) rotateY(180deg);
+  }
+}
+
+.animate-swing {
+  animation: swing 1.3s ease-in-out infinite alternate;
+}
+
+.animate-swing-hair {
+  animation: swing-hair 1.3s ease-in-out infinite alternate;
+}
+
+.animate-float {
+  animation: float 1s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate;
+}
+
+.animate-zero {
+  animation: zero-flip 1.2s ease-in-out infinite alternate;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-bg);
+  color: var(--color-muted);
+}
+
+h1 {
+  color: var(--color-accent);
+  text-transform: capitalize;
+}
